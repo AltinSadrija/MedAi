@@ -189,7 +189,7 @@ export function useApp(){return useContext(Ctx)}
 
 // Patient portal records (compat)
 export const PATIENT_RECORDS={
-  labs:PATIENTS[0].labs,
+  labs:PATIENTS[0].labs.map((l,i)=>({...l,id:i+1})),
   vitalsHistory:[{date:"Feb 15",bp:122,hr:72},{date:"Feb 8",bp:128,hr:75},{date:"Feb 1",bp:130,hr:78},{date:"Jan 25",bp:126,hr:74},{date:"Jan 18",bp:132,hr:80},{date:"Jan 11",bp:124,hr:71}],
   medications:PATIENTS[0].meds.map((m,i)=>({id:i+1,name:m.name,schedule:m.dose,refillDate:m.refill,status:i<2?"active":"prn"})),
   upcomingAppts:[{id:1,date:"Feb 20, 2026",time:"10:00 AM",provider:"Dr. Martinez",type:"Annual Physical",location:"Main Clinic, Room 204"},{id:2,date:"Mar 5, 2026",time:"2:30 PM",provider:"Dr. Lee",type:"Dermatology",location:"Specialty Clinic, Suite 301"}],
