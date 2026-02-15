@@ -1,4 +1,4 @@
-// ============ THEME CONSTANTS ============
+// ============ THEME ============
 export const T = {
   bg: "#0A0F1C",
   surface: "#111827",
@@ -26,7 +26,7 @@ export const fontDisplay = "'Outfit', sans-serif";
 export const fontMono = "'JetBrains Mono', monospace";
 export const font = "'DM Sans', sans-serif";
 
-// ============ MOCK DATA ============
+// ============ DATA ============
 export const symptoms = [
   { id: 1, name: "Headache", icon: "🤕" },
   { id: 2, name: "Fever", icon: "🌡️" },
@@ -41,38 +41,15 @@ export const symptoms = [
 ];
 
 export const initialChatMessages = [
-  {
-    role: "assistant",
-    text: "Hello! I'm your Medical AI Assistant. I'll help assess your symptoms. Please describe what you're experiencing, or select from common symptoms below.",
-  },
+  { role: "assistant", text: "Hello! I'm your Medical AI Assistant. I'll help assess your symptoms. Please describe what you're experiencing, or select from common symptoms below." },
 ];
 
 export const patients = [
-  {
-    id: 1, name: "Sarah Chen", age: 34, condition: "Type 2 Diabetes", risk: "medium",
-    lastVisit: "Feb 12, 2026", vitals: { bp: "128/82", hr: 76, temp: "98.4°F", spo2: "98%" },
-    nextAppt: "Feb 20, 2026", meds: ["Metformin 500mg", "Lisinopril 10mg"],
-  },
-  {
-    id: 2, name: "James Wilson", age: 67, condition: "Hypertension + COPD", risk: "high",
-    lastVisit: "Feb 10, 2026", vitals: { bp: "152/94", hr: 88, temp: "99.1°F", spo2: "93%" },
-    nextAppt: "Feb 16, 2026", meds: ["Amlodipine 5mg", "Tiotropium 18mcg", "Albuterol PRN"],
-  },
-  {
-    id: 3, name: "Maria Garcia", age: 28, condition: "Prenatal Care", risk: "low",
-    lastVisit: "Feb 14, 2026", vitals: { bp: "118/72", hr: 82, temp: "98.6°F", spo2: "99%" },
-    nextAppt: "Feb 28, 2026", meds: ["Prenatal Vitamins", "Iron Supplement"],
-  },
-  {
-    id: 4, name: "Robert Kim", age: 55, condition: "Post-MI Recovery", risk: "high",
-    lastVisit: "Feb 8, 2026", vitals: { bp: "136/88", hr: 72, temp: "98.2°F", spo2: "96%" },
-    nextAppt: "Feb 17, 2026", meds: ["Aspirin 81mg", "Metoprolol 50mg", "Atorvastatin 40mg", "Clopidogrel 75mg"],
-  },
-  {
-    id: 5, name: "Emily Brooks", age: 42, condition: "Anxiety + Insomnia", risk: "low",
-    lastVisit: "Feb 11, 2026", vitals: { bp: "122/78", hr: 68, temp: "98.5°F", spo2: "99%" },
-    nextAppt: "Mar 5, 2026", meds: ["Sertraline 50mg", "Melatonin 3mg"],
-  },
+  { id: 1, name: "Sarah Chen", age: 34, condition: "Type 2 Diabetes", risk: "medium", lastVisit: "Feb 12, 2026", vitals: { bp: "128/82", hr: 76, temp: "98.4°F", spo2: "98%" }, nextAppt: "Feb 20, 2026", meds: ["Metformin 500mg", "Lisinopril 10mg"], color: "#3B82F6" },
+  { id: 2, name: "James Wilson", age: 67, condition: "Hypertension + COPD", risk: "high", lastVisit: "Feb 10, 2026", vitals: { bp: "152/94", hr: 88, temp: "99.1°F", spo2: "93%" }, nextAppt: "Feb 16, 2026", meds: ["Amlodipine 5mg", "Tiotropium 18mcg", "Albuterol PRN"], color: "#EF4444" },
+  { id: 3, name: "Maria Garcia", age: 28, condition: "Prenatal Care", risk: "low", lastVisit: "Feb 14, 2026", vitals: { bp: "118/72", hr: 82, temp: "98.6°F", spo2: "99%" }, nextAppt: "Feb 28, 2026", meds: ["Prenatal Vitamins", "Iron Supplement"], color: "#10B981" },
+  { id: 4, name: "Robert Kim", age: 55, condition: "Post-MI Recovery", risk: "high", lastVisit: "Feb 8, 2026", vitals: { bp: "136/88", hr: 72, temp: "98.2°F", spo2: "96%" }, nextAppt: "Feb 17, 2026", meds: ["Aspirin 81mg", "Metoprolol 50mg", "Atorvastatin 40mg", "Clopidogrel 75mg"], color: "#F59E0B" },
+  { id: 5, name: "Emily Brooks", age: 42, condition: "Anxiety + Insomnia", risk: "low", lastVisit: "Feb 11, 2026", vitals: { bp: "122/78", hr: 68, temp: "98.5°F", spo2: "99%" }, nextAppt: "Mar 5, 2026", meds: ["Sertraline 50mg", "Melatonin 3mg"], color: "#8B5CF6" },
 ];
 
 export const alerts = [
