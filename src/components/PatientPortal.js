@@ -1,7 +1,7 @@
 'use client';
 import { useState } from 'react';
 import { Activity, Heart, Home, Calendar, FileText, Plus, Thermometer, Pill, Zap, CheckCircle, AlertTriangle, MessageCircle, ClipboardList, Download } from 'lucide-react';
-import { T, fd, fm, PATIENT_RECORDS, useApp } from '@/lib/constants';
+import { T, fd, fm, PATIENTS, PATIENT_RECORDS, useApp } from '@/lib/constants';
 import { useIsMobile } from '@/lib/hooks';
 import { Badge, StatCard, CardSection, Btn } from '@/components/ui';
 

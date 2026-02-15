@@ -1,7 +1,7 @@
 'use client';
 import { useState, useEffect, useRef, useCallback } from 'react';
 import { Brain, Shield, Send, Lock, Eye, FileText, CheckCircle, RotateCcw } from 'lucide-react';
-import { T, fd, symptoms, useApp } from '@/lib/constants';
+import { T, fd, SYMPTOMS as symptoms, useApp } from '@/lib/constants';
 import { useIsMobile } from '@/lib/hooks';
 import { Badge, Btn } from '@/components/ui';
 

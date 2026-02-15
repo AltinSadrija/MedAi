@@ -100,7 +100,8 @@ export default function ProviderDashboard() {
                 {selPat.meds.map((m,i) => <span key={i} style={{ padding:"5px 10px",borderRadius:8,background:`${T.accent}12`,border:`1px solid ${T.accent}25`,fontSize:11,color:T.accent,fontWeight:500 }}><Pill size={11} style={{ marginRight:3,verticalAlign:-1 }}/>{m}</span>)}
               </div>
               <div style={{ display:"flex",gap:8,flexWrap:"wrap" }}>
-                <Btn small onClick={() => setModal({ type:"patientDetail",title:`${selPat.name} — Details`, data:selPat })}><FileText size={14}/>Full Record</Btn>
+                <Btn small onClick={() => setModal({ type:"patientDetail",title:`${selPat.name} — Full Record`, data:selPat })}><FileText size={14}/>Record</Btn>
+                <Btn small variant="secondary" onClick={() => setModal({ type:"consent",title:`${selPat.name} — Consent Management`, data:selPat })}>Consent</Btn>
                 <Btn small variant="secondary" onClick={() => toast(`Calling ${selPat.phone}...`)}><Phone size={14}/>Call</Btn>
                 <Btn small variant="secondary" onClick={() => toast(`Message sent to ${selPat.name}`)}><Mail size={14}/>Message</Btn>
               </div>
